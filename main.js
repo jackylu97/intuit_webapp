@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   $("#income").submit(function(event){
     event.preventDefault();
-    new_income = $("input").val();
+    new_income = $("#first_input").val();
 
     if (isNaN(new_income)) {
       alert("Must input numbers");
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
   $("#expense").submit(function(event){
     event.preventDefault();
-    new_expense = $("input").val();
+    new_expense = $("#second_input").val();
 
     if (isNaN(new_expense)) {
       alert("Must input numbers");
